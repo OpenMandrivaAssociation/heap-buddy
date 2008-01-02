@@ -10,6 +10,7 @@ Source0: http://go-mono.com/sources/heap-buddy/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Development/Other
 Url: http://www.mono-project.com/Main_Page
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel
 Requires: %libname = %version
 
