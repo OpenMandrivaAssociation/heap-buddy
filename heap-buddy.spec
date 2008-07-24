@@ -1,6 +1,6 @@
 %define name heap-buddy
 %define version 0.2
-%define release %mkrel 1
+%define release %mkrel 3
 %define libname %mklibname %name 0
 Summary: Heap profiler for mono
 Name: %{name}
