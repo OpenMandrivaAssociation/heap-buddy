@@ -1,13 +1,14 @@
 %define name heap-buddy
 %define version 0.2
-%define release %mkrel 3
+%define release %mkrel 4
 %define libname %mklibname %name 0
 Summary: Heap profiler for mono
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://go-mono.com/sources/heap-buddy/%{name}-%{version}.tar.bz2
-License: GPL
+Patch0: heap-buddy-0.2-fix-build.patch
+License: MIT
 Group: Development/Other
 Url: http://www.mono-project.com/Main_Page
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -33,6 +34,7 @@ data file that we call an 'outfile'.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %configure2_5x
