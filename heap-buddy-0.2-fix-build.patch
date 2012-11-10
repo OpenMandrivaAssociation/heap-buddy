@@ -1,0 +1,11 @@
+diff -p -up heap-buddy-0.2/profiler/backtrace.c~ heap-buddy-0.2/profiler/backtrace.c
+--- heap-buddy-0.2/profiler/backtrace.c~	2006-12-05 21:20:42.000000000 +0100
++++ heap-buddy-0.2/profiler/backtrace.c	2010-07-26 10:16:33.000000000 +0200
+@@ -27,6 +27,7 @@
+  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  */
+ 
++#include <pthread.h>
+ #include <mono/metadata/mono-debug.h>
+ #include <mono/io-layer/mono-mutex.h>
+ #include "backtrace.h"
