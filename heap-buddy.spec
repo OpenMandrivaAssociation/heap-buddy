@@ -34,7 +34,7 @@ data file that we call an 'outfile'.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure2_5x
