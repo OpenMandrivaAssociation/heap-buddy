@@ -10,7 +10,7 @@ Source0: http://go-mono.com/sources/heap-buddy/%{name}-%{version}.tar.bz2
 Patch0: heap-buddy-0.2-fix-build.patch
 License: MIT
 Group: Development/Other
-Url: http://www.mono-project.com/Main_Page
+Url: https://www.mono-project.com/Main_Page
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel
 Requires: %libname = %version
